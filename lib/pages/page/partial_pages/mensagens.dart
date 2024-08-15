@@ -27,14 +27,20 @@ class Mensagens extends StatelessWidget {
                 )),
           ],
         ),
-        Row(
+        const Row(
           children: [
-            Container(
-              height: 400,
-              width: 350,
+            SizedBox(
+              height: 330,
+              width: 250,
               child: const Column(
                 children: [
-                  Image(image: AssetImage("images/bote.png")),
+                  Image(
+                    image: AssetImage("images/bote.png"),
+                    fit: BoxFit.fill,
+                    height: 260,
+                    width: 250,
+                  ),
+                  Spacer(),
                   Row(
                     children: [
                       Text(
@@ -46,6 +52,7 @@ class Mensagens extends StatelessWidget {
                       Icon(Icons.star),
                     ],
                   ),
+                  Spacer(),
                   Row(
                     children: [
                       Icon(
