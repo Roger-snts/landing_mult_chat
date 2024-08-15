@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Page01 extends StatefulWidget {
-  const Page01({super.key});
+  const Page01({super.key, required this.controller});
+  final PageController controller;  
 
   @override
   State<Page01> createState() => Page01State();
@@ -37,7 +38,9 @@ class Page01State extends State<Page01> {
                 height: 40,
                 decoration: const BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      widget.controller.animateToPage(1, duration: const Duration(seconds: 1), curve: Curves.easeInOut,);
+                    },
                     child: const Text("Iniciar", style: TextStyle(color: Colors.white),)),
               )
             ],

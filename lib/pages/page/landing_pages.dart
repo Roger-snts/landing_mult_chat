@@ -12,18 +12,18 @@ class LandingPage extends StatefulWidget {
 }
 
 class LandingPageState extends State<LandingPage> {
-  final _controller = PageController(initialPage: 0);
+  final controller = PageController(initialPage: 0);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: null,
       body: PageView(
-        controller: _controller,
-        children: const [
-          Page01(),
-          Page02(),
-          Page03()
+        controller: controller,
+        children: [
+          Page01(controller: controller,),
+          Page02(controller: controller,),
+          Page03(controller: controller,)
         ],
       ),
     );
