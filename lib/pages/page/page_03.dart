@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:landing_mult_chat/pages/page/inicio.dart';
+import 'package:landing_mult_chat/pages/page/navegar_para.dart';
 
 class Page03 extends StatefulWidget {
   const Page03({super.key, required this.controller});
@@ -47,7 +49,7 @@ class Page03State extends State<Page03> {
                     borderRadius: BorderRadius.all(Radius.circular(10))),
                 child: TextButton(
                     onPressed: () {
-                      widget.controller.animateToPage(0, duration: const Duration(seconds: 1), curve: Curves.easeInOut,);
+                      navegarPara(context, const Inicio(), fechar: true);
                     },
                     child: const Text(
                       "Finalizar",

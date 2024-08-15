@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:landing_mult_chat/pages/page/landing_pages.dart';
+import 'package:landing_mult_chat/pages/page/navegar_para.dart';
 
 class HomeLander extends StatefulWidget {
   const HomeLander({super.key});
@@ -100,9 +101,8 @@ class _HomeLanderState extends State<HomeLander> {
                           padding: const EdgeInsets.all(10),
                         ),
                         onPressed: () {
-                          if (email != "" && senha != "") {
-                            Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => const LandingPage()));
+                          if (email != false && senha != false) {
+                            navegarPara(context, const LandingPage());
                           }
                         },
                         child: const Text(

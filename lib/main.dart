@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:landing_mult_chat/pages/page/home_land.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:landing_mult_chat/pages/page/inicio.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: const HomeLander(),
+      home: const Inicio(),
     );
   }
 }
