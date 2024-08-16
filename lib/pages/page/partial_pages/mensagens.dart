@@ -62,6 +62,8 @@ class Mensagens extends StatelessWidget {
                       Text("Madrid, Espanha"),
                       Spacer(),
                       Stack(
+                        fit: StackFit.loose,
+                        alignment: AlignmentDirectional.left,
                         children: [
                           ImageIcon(
                             AssetImage("images/icone.png"),
