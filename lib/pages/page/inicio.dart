@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
-import 'package:landing_mult_chat/pages/page/partial_pages/mensagens.dart';
-import 'package:landing_mult_chat/pages/page/partial_pages/perfil.dart';
 import 'package:landing_mult_chat/pages/page/partial_pages/principal.dart';
+import 'package:landing_mult_chat/pages/page/partial_pages/perfil.dart';
+import 'package:landing_mult_chat/pages/page/partial_pages/mensagem.dart';
 
 class Inicio extends StatefulWidget {
   const Inicio({super.key});
@@ -12,12 +11,8 @@ class Inicio extends StatefulWidget {
 }
 
 class _InicioState extends State<Inicio> {
-  int estadoAtual = 0;
-  final paginas = [
-    Mensagens(),
-    Principal(),
-    Perfil()
-  ];
+  int estadoAtual = 1;
+  final paginas = [Mensagem(), Principal(), Perfil()];
 
   @override
   Widget build(BuildContext context) {
@@ -31,10 +26,16 @@ class _InicioState extends State<Inicio> {
                   image: AssetImage("images/icone.png"),
                   height: 50,
                 ),
-                Text("AAAAAAA")
+                Text("  Moacir")
               ],
             ),
           ),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.notifications),
+              onPressed: () {},
+            ),
+          ],
           backgroundColor: Colors.transparent,
         ),
         body: paginas[estadoAtual],
@@ -44,7 +45,6 @@ class _InicioState extends State<Inicio> {
           fixedColor: Colors.blue,
           currentIndex: estadoAtual,
           iconSize: 25,
-          
           onTap: (index) => setState(() => estadoAtual = index),
           items: const [
             BottomNavigationBarItem(
