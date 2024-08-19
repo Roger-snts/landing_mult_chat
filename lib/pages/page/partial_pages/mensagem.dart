@@ -11,27 +11,34 @@ class Mensagem extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Row(
+             Column(
               children: [
-                Text(
-                  "Mensagens",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold),
+                Row(
+                  children: [
+                    Text(
+                      "Mensagens",
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 22,
+                          fontWeight: FontWeight.normal),
+                    ),
+                    Spacer(),
+                    Icon(Icons.edit_note_sharp)
+                  ],
                 ),
-                Spacer(),
-                Icon(Icons.edit_note_sharp)
+                TextField(
+                  autocorrect: true,
+                  autofocus: false,
+                  expands: false,
+                  keyboardType: TextInputType.name,
+                  decoration: InputDecoration(
+                    label: Text("Pesquise por bate-papos e mensagens"),
+                    prefixIcon: Icon(Icons.search),
+                    filled: true,
+                    fillColor: Colors.grey[300],
+                  ),
+                ),
               ],
-            ),
-            TextField(
-              autocorrect: true,
-              autofocus: false,
-              expands: false,
-              keyboardType: TextInputType.name,
-              decoration: InputDecoration(
-                prefix: Icon(Icons.search),
-              ),
             ),
             ListView(
               shrinkWrap: true,
@@ -42,9 +49,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("Clara Pizzantino"),
-                  subtitle: Text("Simto Muito"),
-                  trailing: Icon(
+                  title: const Text("Clara Pizzantino"),
+                  subtitle: const Text("Simto Muito"),
+                  trailing: const Icon(
                     Icons.verified_outlined,
                     color: Colors.orangeAccent,
                   ),
@@ -55,9 +62,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("James Robson"),
-                  subtitle: Text("Futebol hoje às 22h?"),
-                  trailing: Icon(
+                  title: const Text("James Robson"),
+                  subtitle: const Text("Futebol hoje às 22h?"),
+                  trailing: const Icon(
                     Icons.verified,
                     color: Colors.greenAccent,
                   ),
@@ -68,9 +75,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("Mario'n Armario"),
-                  subtitle: Text("Não encontrei o cano verde."),
-                  trailing: Icon(
+                  title: const Text("Mario'n Armario"),
+                  subtitle: const Text("Não encontrei o cano verde."),
+                  trailing: const Icon(
                     Icons.verified,
                     color: Colors.greenAccent,
                   ),
@@ -81,9 +88,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("Arthur Lutter King"),
-                  subtitle: Text("Tô te dizendo, eu sou o cara certo!"),
-                  trailing: Icon(
+                  title: const Text("Arthur Lutter King"),
+                  subtitle: const Text("Tô te dizendo, eu sou o cara certo!"),
+                  trailing: const Icon(
                     Icons.verified_outlined,
                     color: Colors.blueAccent,
                   ),
@@ -94,9 +101,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("Maria Duda"),
-                  subtitle: Text("Hoje eu não posso."),
-                  trailing: Icon(
+                  title: const Text("Maria Duda"),
+                  subtitle: const Text("Hoje eu não posso."),
+                  trailing: const Icon(
                     Icons.verified_outlined,
                     color: Colors.orange,
                   ),
@@ -107,9 +114,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("Michael J.J."),
-                  subtitle: Text("A Duda disse que não poderia."),
-                  trailing: Icon(
+                  title: const Text("Michael J.J."),
+                  subtitle: const Text("A Duda disse que não poderia."),
+                  trailing: const Icon(
                     Icons.verified,
                     color: Colors.greenAccent,
                   ),
@@ -120,9 +127,9 @@ class Mensagem extends StatelessWidget {
                     height: 40,
                     width: 40,
                   ),
-                  title: Text("Walter D."),
-                  subtitle: Text("Blz"),
-                  trailing: Icon(
+                  title: const Text("Walter D."),
+                  subtitle: const Text("Blz"),
+                  trailing: const Icon(
                     Icons.verified_outlined,
                     color: Colors.blueAccent,
                   ),
