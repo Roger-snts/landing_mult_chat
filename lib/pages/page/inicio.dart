@@ -11,7 +11,7 @@ class Inicio extends StatefulWidget {
 }
 
 class _InicioState extends State<Inicio> {
-  int estadoAtual = 1;
+  int estadoAtual = 0;
   final paginas = [Mensagem(), Principal(), Perfil()];
 
   @override

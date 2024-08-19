@@ -17,18 +17,18 @@ class Perfil extends StatelessWidget {
                 height: 130,
                 width: 130,
               ),
-              Text(
+              const Text(
                 "Moacir",
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 22,
                     fontWeight: FontWeight.bold),
               ),
-              Text(
+              const Text(
                 "mrsantos@hotmail.com",
                 style: TextStyle(color: Colors.grey),
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Column(
@@ -63,11 +63,11 @@ class Perfil extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: EdgeInsets.all(8),
+            padding: const EdgeInsets.all(8),
             child: ListView(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               shrinkWrap: true,
-              children: [
+              children: const [
                 ListTile(
                   leading: Icon(Icons.person_rounded),
                   title: Text("Perfil"),
