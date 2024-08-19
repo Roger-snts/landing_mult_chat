@@ -12,14 +12,14 @@ class Inicio extends StatefulWidget {
 
 class _InicioState extends State<Inicio> {
   int estadoAtual = 0;
-  final paginas = [Mensagem(), Principal(), Perfil()];
+  final paginas = [const Mensagem(), const Principal(), const Perfil()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Padding(
-            padding: const EdgeInsets.fromLTRB(15, 0, 0, 0),
+          title: const Padding(
+            padding: EdgeInsets.fromLTRB(15, 0, 0, 0),
             child: Row(
               children: [
                 Image(
@@ -32,7 +32,7 @@ class _InicioState extends State<Inicio> {
           ),
           actions: [
             IconButton(
-              icon: Icon(Icons.notifications),
+              icon: const Icon(Icons.notifications),
               onPressed: () {},
             ),
           ],

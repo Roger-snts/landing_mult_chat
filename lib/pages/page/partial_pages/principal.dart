@@ -18,7 +18,7 @@ class Principal extends StatelessWidget {
               "Melhor destino",
               style: TextStyle(fontWeight: FontWeight.normal, fontSize: 16),
             ),
-            Spacer(),
+            const Spacer(),
             TextButton(
                 onPressed: () {},
                 child: const Text(

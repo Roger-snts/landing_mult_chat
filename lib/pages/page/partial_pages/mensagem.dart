@@ -13,7 +13,7 @@ class Mensagem extends StatelessWidget {
           children: [
              Column(
               children: [
-                Row(
+                const Row(
                   children: [
                     Text(
                       "Mensagens",
@@ -23,7 +23,7 @@ class Mensagem extends StatelessWidget {
                           fontWeight: FontWeight.normal),
                     ),
                     Spacer(),
-                    Icon(Icons.edit_note_sharp)
+                    const Icon(Icons.edit_note_sharp)
                   ],
                 ),
                 TextField(
@@ -32,8 +32,8 @@ class Mensagem extends StatelessWidget {
                   expands: false,
                   keyboardType: TextInputType.name,
                   decoration: InputDecoration(
-                    label: Text("Pesquise por bate-papos e mensagens"),
-                    prefixIcon: Icon(Icons.search),
+                    label: const Text("Pesquise por bate-papos e mensagens"),
+                    prefixIcon: const Icon(Icons.search),
                     filled: true,
                     fillColor: Colors.grey[300],
                   ),
