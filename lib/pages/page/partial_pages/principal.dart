@@ -36,7 +36,7 @@ class Principal extends StatelessWidget {
                 child: SizedBox(
                   height: 330,
                   width: 250,
-                  child: const Column(
+                  child: Column(
                     children: [
                       Image(
                         image: AssetImage("images/bote.png"),
@@ -106,7 +106,7 @@ class Principal extends StatelessWidget {
                 child: SizedBox(
                   height: 330,
                   width: 250,
-                  child: const Column(
+                  child: Column(
                     children: [
                       Image(
                         image: AssetImage("images/barquinho.png"),
@@ -176,7 +176,7 @@ class Principal extends StatelessWidget {
                 child: SizedBox(
                   height: 330,
                   width: 250,
-                  child: const Column(
+                  child: Column(
                     children: [
                       Image(
                         image: AssetImage("images/montanhas.png"), 

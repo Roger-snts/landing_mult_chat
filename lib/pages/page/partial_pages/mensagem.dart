@@ -23,7 +23,7 @@ class Mensagem extends StatelessWidget {
                           fontWeight: FontWeight.normal),
                     ),
                     Spacer(),
-                    const Icon(Icons.edit_note_sharp)
+                    Icon(Icons.edit_note_sharp)
                   ],
                 ),
                 TextField(
